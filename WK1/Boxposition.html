@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      height: 200vh;
+    }
+    .big {
+      width: 50%;
+      height: 50%;}      
+    .small {
+      width: 25%;
+      height: 25%;
+    } 
+    .inside {
+      width: 10%;
+      height: 10%;
+    }
+    .absolute {
+      position: absolute;
+    }
+    .relative {
+      position: relative;
+    }
+    .fixed {
+      position: fixed;
+    }
+    .top {
+      top: 0;
+    }
+    .right {
+      right: 0;
+    }
+    .bottom {
+      bottom: 0;
+    }
+    .left {
+      left: 0;
+    }
+    .center {
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .red {
+      background-color: red;
+    }
+    .green {
+      background-color: green;
+    }
+    .blue {
+      background-color: blue;
+    }
+    .yellow {
+      background-color: yellow;
+    }
+    .pink {
+      background-color: deeppink;
+    }
+    .white {
+      background-color: white;
+    } 
+    </style>
+    </head>
+    <body>
+        <div class="small red left top absolute"></div>
+        <div class="small green right top absolute"> </div>
+        <div class="small yellow right bottom absolute"> </div>  
+        <div class="small blue left bottom absolute"> </div>  
+        <div class="big white center absolute fixed">
+          <div class="red inside top left fixed"></div>
+          <div class="pink inside center absolute fixed"></div> 
+          <div class="green inside top right absolute fixed"></div>
+          <div class="blue inside bottom left absolute fixed"></div>
+          <div class="yellow inside bottom right absolute fixed"></div>
+        </div>
+      </div>
+    </body>
+    </html>
+  </body>
+</html>
